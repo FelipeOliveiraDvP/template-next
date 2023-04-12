@@ -12,8 +12,8 @@
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "lint-staged": "lint-staged",
-    "lint:fix": "yarn lint --fix --max-warnings=0"
+    "lint-staged": "eslint --fix --max-warnings=0",
+    "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
     "@types/node": "18.15.11",
