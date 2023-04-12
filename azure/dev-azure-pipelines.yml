@@ -10,14 +10,22 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '415756d7-6d37-44b5-87ab-c2ae32031c11'
-  imageRepository: 'devfrontsenaicyberscore'
+  dockerRegistryServiceConnection: 'AUTOMATICALLY_GENERATED'
+  # Change for the name of project
+  imageRepository: 'PROJECT_IMAGE_NAME'
+  # Azure Portal Domain
   containerRegistry: 'istic.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/docker/Dev-Dockerfile'
+  # Dockerfile path
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  # Tag for image version control
   tag: '$(Build.BuildId)'
-
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+  # Initial environment variables
+  siteUrl: http://localhost:3000
+  apiUrl: https://local.url.com
+  defaultSrc: local.url.com
+  imageSrc: blob.url.com
 
 stages:
   - stage: Build
