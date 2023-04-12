@@ -12,7 +12,7 @@
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "lint-staged": "lint-staged",
+    "lint-staged": "eslint --fix --max-warnings=0",
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
