@@ -15,6 +15,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NODE_ENV production
+ENV NEXT_PUBLIC_SITE_URL http://localhost:3000
 ENV NEXT_PUBLIC_API_URL https://api.example.com
 ENV NEXT_PUBLIC_DEFAULT_SRC api.example.com
 ENV NEXT_PUBLIC_IMAGE_SRC blob.example.com
