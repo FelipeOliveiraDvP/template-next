@@ -19,7 +19,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
-    // 'no-unused-vars': 'error',
+    'no-unused-vars': 'error',
     // 'no-use-before-define': 'off',
   },
   settings: {
