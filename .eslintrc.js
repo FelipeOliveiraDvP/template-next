@@ -10,7 +10,6 @@ module.exports = {
     'next/core-web-vitals',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:@typescript-eslint/recommended',
   ],
   overrides: [],
   parserOptions: {
@@ -21,8 +20,6 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
-    // 'no-unused-vars': 'error',
-    // 'no-use-before-define': 'off',
   },
   settings: {
     react: {

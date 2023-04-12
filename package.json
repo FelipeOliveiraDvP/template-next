@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix --max-warnings=0"
   },
   "dependencies": {
     "@types/node": "18.15.11",
