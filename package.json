@@ -10,7 +10,10 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "lint:fix": "yarn lint --fix --max-warnings=0",
-    "cypress": "cypress open"
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
+    "component": "cypress open --component",
+    "component:headless": "cypress run --component"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -37,6 +40,7 @@
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
-    "prettier": "2.8.7"
+    "prettier": "2.8.7",
+    "start-server-and-test": "^2.0.0"
   }
 }
