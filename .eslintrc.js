@@ -5,13 +5,10 @@ module.exports = {
     node: true,
   },
   extends: [
-    'prettier',
+    'next/core-web-vitals',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'next/core-web-vitals',
   ],
   overrides: [],
   parserOptions: {
@@ -22,6 +19,12 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
-    'no-use-before-define': 'off',
+    // 'no-unused-vars': 'error',
+    // 'no-use-before-define': 'off',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };
