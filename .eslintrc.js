@@ -5,6 +5,8 @@ module.exports = {
     node: true,
   },
   extends: [
+    'standard',
+    'prettier',
     'next/core-web-vitals',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -15,11 +17,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
-    'no-unused-vars': 'error',
+    // 'no-unused-vars': 'error',
     // 'no-use-before-define': 'off',
   },
   settings: {
